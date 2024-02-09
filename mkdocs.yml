@@ -1,0 +1,86 @@
+site_name: Automation Test
+
+site_url: https://hengbinxu.github.io/automation-test-note/
+site_dir: public
+repo_name: automation-testing-documentation
+repo_url: https://github.com/hengbinxu/automation-test-note
+
+nav:
+  - Home: index.md
+  - Install Python: ./setup-env/install-python/install-python.md
+  - Selenium: selenium.md
+  - Setup Device Environment: setup-android-ios-env.md
+  - Containerize Environment: containerize-env.md
+  - System Architecture: system-architecture.md
+
+theme:
+  name: "material"
+  favicon: resources/images/machine-icon.jpg
+  nav_style: light
+  custom_dir: docs/resources/
+  language: "en"
+  features:
+    - navigation.indexes
+    - navigation.path
+    - navigation.tracking
+    - toc.follow
+    - search.highlight
+    - search.share
+    - search.suggest
+
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+  include_sidebar: true
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - meta
+  - pymdownx.caret
+  - pymdownx.tilde
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - codehilite:
+      guess_lang: false
+      linenums: true
+  - toc:
+      permalink: true
+  - pymdownx.betterem: # Improve emphasis (bold and italic) handling
+      smart_enable: all
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+plugins:
+  - search
+  - social
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/hengbinxu
+
+copyright: |
+  &copy; 2024 <a href="https://github.com/hengbinxu"  target="_blank" rel="noopener">Wayne Xu</a>

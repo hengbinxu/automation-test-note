@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "automation-documents"
+version = "0.1.0"
+description = ""
+authors = ["Wayne <waynxu1027@gmail.com>"]
+readme = "README.md"
+packages = [{include = "automation_documents"}]
+
+[tool.poetry.dependencies]
+python = "^3.10.7"
+mkdocs = ">=1.1.2"
+mkdocs-material = {extras = ["imaging"], version = "^9.5.8"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
